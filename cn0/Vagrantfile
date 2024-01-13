@@ -6,8 +6,7 @@ ENV['VAGRANT_DEFAULT_PROVIDER'] = 'libvirt'
 Vagrant.configure("2") do |config|
   config.vm.box = "generic/rhel8"
   config.vm.hostname = "cn0"
-#  config.vm.define  "cn1"
-
+  config.vm.network "public_network", ip: "192.168.121.130", dev: "enp3s0"
   config.vm.provider "libvirt" do | kvm |
     
   end
