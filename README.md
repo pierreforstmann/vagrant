@@ -3,14 +3,14 @@
 ```vagrant init generic/rhel8```
 
 
-```vagrant halt```
+```sudo vagrant halt```
 
-```vagrant up```
+```sudo vagrant up```
 
-**```vagrant ssh```**
+**```sudo vagrant ssh```**
 
-```vagrant reload```
+```sudo vagrant reload```
 
-```vagrant destroy -f```
+```sudo vagrant destroy -f```
 
 
