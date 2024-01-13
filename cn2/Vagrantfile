@@ -1,0 +1,15 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+#
+ENV['VAGRANT_DEFAULT_PROVIDER'] = 'libvirt'
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/rhel8"
+  config.vm.hostname = "cn2"
+#  config.vm.define  "cn2"
+
+  config.vm.provider "libvirt" do | kvm |
+    
+  end
+
+end
