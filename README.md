@@ -7,9 +7,7 @@
 
 ```vagrant up```
 
-
-``` vagrant ssh```
-
+**```vagrant ssh```**
 
 ```vagrant reload```
 
