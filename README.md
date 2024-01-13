@@ -13,4 +13,6 @@
 
 ```sudo vagrant destroy -f```
 
+**```sudo virsh list --all```**
+
 
