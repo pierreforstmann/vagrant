@@ -4,11 +4,16 @@
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'libvirt'
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "generic/rhel8"
+  config.vm.box = "almalinux/8"
   config.vm.hostname = "cn0"
   config.vm.network "public_network", ip: "192.168.121.130", dev: "enp3s0"
+
   config.vm.provider "libvirt" do | kvm |
-    
+  kvm.memory = 2048
   end
+
+  config.vm.provision "shell", inline: <<-SHELL
+  sh /vagrant/setup.sh
+  SHELL
 
 end
