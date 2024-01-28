@@ -17,4 +17,3 @@ echo "=> check python"
 python3 --version
 echo "=> check ansible"
 ansible --version
-
