@@ -2,6 +2,12 @@
 #
 # setup.sh for ansible
 #
+hostnamectl set-hostname cn2
+echo "=> check hostname"
+hostname
+echo "check /etc/hostname"
+cat /etc/hostname
+#
 dnf update -y
 dnf upgrade -y
 dnf install -y epel-release
